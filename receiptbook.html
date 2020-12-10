@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="receipt.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Equipment Receipt</title>
+  </head>
+  <body>
+    <div>
+      <form
+        action="action_page.php"
+        method="post"
+        target="_self"
+        accept-charset="UTF-8"
+        enctype="application/x-www-form-urlencoded"
+        autocomplete="on"
+        validate
+      >
+        <fieldset>
+          <img
+            src="logo.jpg"
+            alt="Fairgreen Logo"
+            width="150"
+            height="150"
+          />
+
+          <div id="lef">
+            <p>P.O. Box GP 579, Accra-Ghana</p>
+            <p>Tel: +233 (0)30 2246453, 2256920/1</p>
+            <p>Fax: +233 (0)30 2234193</p>
+          </div>
+          <div id="rig">
+            <p>P.O. Box GP 579, Accra-Ghana</p>
+            <p>Tel: +233 (0)30 2246453, 2256920/1</p>
+            <p>Fax: +233 (0)30 2234193</p>
+          </div>
+
+          <h2 style="text-align: center">EQUIPMENT RECEIPT</h2>
+
+          <label for="address">Address</label>
+          <input type="text" id="address" name="fulladdress" />
+
+          <label for="name">Name</label>
+          <input type="text" id="name" name="fname" />
+
+          <label for="number">Tel No.</label>
+          <input type="text" id="number" name="contact" />
+
+          <label for="cont">Contact</label>
+          <input type="text" id="cont" name="fcontact" />
+
+          <label for="mail">Email</label>
+          <input type="text" id="mail" name="email" />
+
+          <label for="country">State</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+        </fieldset>
+
+        <div>
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
